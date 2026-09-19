@@ -42,7 +42,7 @@ code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px}
 #a .ilerleme i.d{background:var(--kagit)}
 #a .atla{position:absolute;top:32px;right:var(--kenar);z-index:26;font:700 11px/1 'Space Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--kagit)}
 #a .kunye{position:absolute;top:32px;left:var(--kenar);z-index:26;font:700 11px/1 'Space Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:rgba(233,230,220,.6)}
-#a .sayac{position:absolute;bottom:24px;left:var(--kenar);right:var(--kenar);z-index:26;display:flex;justify-content:space-between;font:700 10px/1 'Space Mono',monospace;letter-spacing:.14em;color:rgba(233,230,220,.55)}
+#a .sayac{position:absolute;bottom:24px;left:var(--kenar);right:var(--kenar);z-index:26;display:flex;justify-content:space-between;font:700 11px/1 'Space Mono',monospace;letter-spacing:.12em;color:rgba(233,230,220,.55)}
 #a .ic{position:absolute;top:var(--bant);bottom:var(--bant);left:var(--kenar);right:var(--kenar);padding:24px 0;display:flex;flex-direction:column}
 #a .etiket{align-self:flex-start;font:700 11px/1 'Space Mono',monospace;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--m);background:var(--etiket);padding:7px 8px;box-shadow:4px 4px 0 var(--m)}
 #a .baslik{font:400 64px/0.94 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:-.005em;margin-top:16px}
@@ -133,11 +133,11 @@ code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px}
 @media (prefers-reduced-motion:reduce){#a .tel *{animation:none!important;opacity:1!important;transform:none}}
 #a .bant-ust,#a .bant-alt{background:#0b0b0b}
 #a .k1{--zemin:#e9e6dc;--m:#111;--vurgu:#ff3b1f;--vurgu-y:#fff;--yapiskan:rgba(255,228,94,.92);--sari:#ffe45e;--etiket:#fff}
-#a .k2{--zemin:#ffe14d;--m:#111;--vurgu:#00b3a4;--vurgu-y:#fff;--yapiskan:rgba(255,111,181,.92);--sari:#ff6fb5;--etiket:#fff}
+#a .k2{--zemin:#ffe14d;--m:#111;--vurgu:#009486;--vurgu-y:#fff;--yapiskan:rgba(255,111,181,.92);--sari:#ff6fb5;--etiket:#fff}
 #a .k3{--zemin:#2f4bff;--m:#fff;--vurgu:#ffe14d;--vurgu-y:#111;--yapiskan:rgba(255,111,181,.95);--sari:#ffe14d;--etiket:#2f4bff}
 #a .k4{--zemin:#c6f24a;--m:#111;--vurgu:#7a2bff;--vurgu-y:#fff;--yapiskan:rgba(255,111,181,.92);--sari:#ffe14d;--etiket:#fff}
 #a .k5{--zemin:#ff6fb5;--m:#111;--vurgu:#111;--vurgu-y:#fff;--yapiskan:rgba(255,225,77,.95);--sari:#ffe14d;--etiket:#fff}
-#a .k6{--zemin:#191919;--m:#ece8dc;--vurgu:#ff3b1f;--vurgu-y:#ece8dc;--yapiskan:rgba(255,225,77,.92);--sari:#ffe14d;--etiket:#191919}
+#a .k6{--zemin:#191919;--m:#ece8dc;--vurgu:#ff3b1f;--vurgu-y:#ffffff;--yapiskan:rgba(255,225,77,.92);--sari:#ffe14d;--etiket:#191919}
 #a .k6 .muhur{mix-blend-mode:normal}
 #a .k3 .cerceve img,#a .k2 .cerceve img{outline:0}
 #a .baslik{line-height:1;margin-top:24px}
@@ -148,8 +148,8 @@ code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px}
 #a .k1 .s2{animation:sat_a 8s steps(1) infinite;animation-delay:1.3s}
 #a .k1 .s3{animation:sat_a 8s steps(1) infinite;animation-delay:1.7s}
 @keyframes sat_a{0%{opacity:0;transform:translateX(-14px)}1%{opacity:1;transform:translateX(6px)}2%{transform:translate(-2px,1px)}3%,100%{opacity:1;transform:none}}
-#a .k3 .ikili{gap:16px;margin-top:24px}
-#a .k3 .baski{grid-template-columns:1fr 132px}
+#a .k3 .ikili{gap:28px;margin-top:24px}
+#a .k3 .baski{grid-template-columns:1fr 132px;gap:12px}
 #a .k3 .fark{margin-top:auto;padding-top:12px}
 #a .k5 .yarik{margin-top:16px}
 #a .tel *{animation-iteration-count:1!important;animation-fill-mode:both!important}
@@ -193,8 +193,8 @@ code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px}
 #b .ilerleme i.d{background:#e9e6dc}
 #b .kunye,#b .atla{position:absolute;top:32px;z-index:26;font:700 11px/1 'Space Mono',monospace;letter-spacing:.1em;text-transform:uppercase}
 #b .kunye{left:var(--kenar);color:rgba(233,230,220,.6)}
-#b .atla{right:var(--kenar);color:#e9e6dc}
-#b .sayac{position:absolute;bottom:24px;left:var(--kenar);right:var(--kenar);z-index:26;display:flex;justify-content:space-between;font:700 10px/1 'Space Mono',monospace;letter-spacing:.14em;color:rgba(233,230,220,.55)}
+#b .atla{right:calc(var(--kenar) - 10px);color:#e9e6dc;padding:16px 10px;top:16px}
+#b .sayac{position:absolute;bottom:24px;left:var(--kenar);right:var(--kenar);z-index:26;display:flex;justify-content:space-between;font:700 11px/1 'Space Mono',monospace;letter-spacing:.12em;color:rgba(233,230,220,.55)}
 #b .ic{position:absolute;top:var(--bant);bottom:var(--bant);left:var(--kenar);right:var(--kenar);padding:24px 0;display:flex;flex-direction:column}
 #b .etiket{align-self:flex-start;font:700 11px/1 'Space Mono',monospace;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--m);background:var(--etiket);padding:7px 8px;box-shadow:4px 4px 0 var(--m)}
 #b .baslik{font:400 60px/1 Anton,Impact,sans-serif;text-transform:uppercase;margin-top:24px}
@@ -219,6 +219,9 @@ code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:4px}
 #b .ic > .ad{margin-top:16px!important}
 #b .cerceve{margin-top:20px!important}
 
+
+/* Atla gerçek dokunma alanı: 44px (iOS). Maket de gerçek ölçüde dursun. */
+#a .tel .atla,#b .tel .atla{top:10px;right:14px;padding:17px 10px;line-height:1}
 </style>
 </head>
 <body>
